@@ -42,7 +42,7 @@ def createSchema():
     )
 
 
-with open('500-us-users.csv', newline='') as user_file:
+with open('data/500-us-users.csv', newline='') as user_file:
     data = csv.DictReader(user_file, delimiter=',')
     users = np.empty((0, 9))
 

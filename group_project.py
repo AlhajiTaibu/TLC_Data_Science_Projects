@@ -35,7 +35,7 @@ cursor.execute(
     """
 )
 
-with open('500-us-users.csv', newline='') as csv_file:
+with open('data/500-us-users.csv', newline='') as csv_file:
     reader = csv.DictReader(csv_file)
     data = np.empty((0, 9))
     for row in reader:
